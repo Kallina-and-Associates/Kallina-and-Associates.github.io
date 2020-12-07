@@ -1,0 +1,20 @@
+<div id="featured-solutions">
+  <div class="off-header">
+    <div>
+
+      <div class="off-image">
+        <img src="/assets/img/our_solutions.png" alt="Our Featured Solutions" />
+      </div>
+
+      <div class="off-text">
+        {% include solutions/description.html %}
+      </div>
+    </div>
+  </div>
+
+  {% include solutions/story_bar.html story_name="grocery_store" story_image="grocery_bag"
+      bar_class="first" %}
+
+  {% include solutions/story_bar.html story_name="undeveloped_property" story_image="surveyor"
+      bar_class="second" %}
+</div>

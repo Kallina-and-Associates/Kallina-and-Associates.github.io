@@ -1,0 +1,32 @@
+---
+layout: ka_layout
+---
+<div id="featured-solutions">
+  <div class="off-header">
+    <div>
+
+      <div class="off-image">
+        <img src="/assets/img/our_solutions.png" alt="Our Featured Solutions" />
+      </div>
+
+      <div class="off-text">
+        <p>
+          The most fascinating part of our work is the
+          <span class="emphasis">stories</span> &mdash; our clients' problems and
+          the creative solutions we use to solve them. The client stories we highlight
+          below are not uncommon, but the solutions we have developed are not widely
+          used or known throughout the industry.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {% include solutions/story_bar.html story_name="grocery_store" story_image="grocery_bag"
+      bar_class="first" %}
+
+  {% include solutions/story_bar.html story_name="undeveloped_property" story_image="surveyor"
+      bar_class="second" %}
+
+  {% include solutions/story_bar.html story_name="tuition" story_image="kid"
+      bar_class="first" %}
+</div>
