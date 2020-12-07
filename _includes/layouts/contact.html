@@ -1,0 +1,47 @@
+<div id="contact">
+  <div id="contact-row">
+    <div id="contact-form">
+      <h2>Send a message</h2>
+
+      <form role="form" method="post" action="/mail.php">
+        <div class="form-group">
+          <label for="contact_name" class="sr-only">Name</label>
+          <input type="name" class="form-control" name="contact_name" placeholder="Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact_email" class="sr-only">Email address</label>
+          <input type="email" class="form-control" name="contact_email" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact_message" class="sr-only">Message</label>
+          <textarea class="form-control" name="contact_message" rows="10" placeholder="Your message" required></textarea>
+        </div>
+
+        <input type="submit" class="btn btn-default btn-lg" value="Submit">
+      </form>
+    </div>
+
+    <div id="contact-info">
+      <address>
+        Kallina &amp; Associates, LLC<br>
+        306 W. Chesapeake Ave.<br>
+        Towson, MD 21204-4405
+      </address>
+
+      <address>
+      Office Hours<br>
+      Monday to Friday<br>
+      8 am &mdash; 5 pm
+      </address>
+
+      <address class="phones">
+        <img src="{{site.baseurl}}/assets/img/email.png" alt="email" />
+          <a href'mailto:administrator@kallinalaw.com'>administrator@kallinalaw.com</a><br>
+        <img src="{{site.baseurl}}/assets/img/phone.png" alt="phone" /> 410.377.2170<br>
+        <img src="{{site.baseurl}}/assets/img/fax.png" alt="fax" /> 443.797.1147
+      </address>
+    </div>
+  </div>
+</div>

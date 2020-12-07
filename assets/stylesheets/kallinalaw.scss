@@ -1,0 +1,356 @@
+/* MAIN */
+
+@import 'break_points';
+@import 'colors';
+@import 'fonts';
+
+body {
+  color: $dragonsBreath;
+  font-family: Helvetica;
+  letter-spacing: 0.5px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a, a:hover {
+  color: $brightGreen;
+}
+
+/* offset .container 15px padding on left and right */
+.clearfix {
+  zoom: 1;
+  .clearfix:before, .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+}
+
+.half-table {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  .half-row {
+    display: table-row;
+    .half-cell {
+      display: table-cell;
+      vertical-align: top;
+      width: 50%;
+    }
+    .half-text {
+      padding: 0% 8%;
+    }
+  }
+}
+
+.image {
+  position: relative;
+  .featured-img {
+    display: none;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+.first .image {
+  float: right;
+}
+
+.second .image {
+  float: left;
+}
+
+.off-header {
+  padding: 70px 18% 40px 18%;
+  .off-image, .off-text {
+    vertical-align: bottom;
+  }
+  .line {
+    .off-text {
+      border-bottom: 1px solid $dragonsBreath45;
+      padding-bottom: 20px;
+    }
+  }
+  .off-image {
+    float: left;
+    img {
+      height: 100px;
+      padding-bottom: 20px;
+      padding-right: 40px;
+    }
+  }
+  .off-text {
+    font-size: 15px;
+    line-height: 21px;
+    a {
+      color: $dragonsBreath;
+    }
+    .emphasis {
+      font-size: 16px;
+      font-weight: bold;
+    } 
+  }
+}
+
+/* SERVICES */
+#services {
+  background-color: $waynesboroTaupe;
+}
+
+#audience, #end-products {
+  .half-cell {
+    background-color: $lightGray;
+  }
+  .title {
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    margin-top: 90px;
+  }
+}
+
+#audience {
+  .title {
+    border-bottom: 1px solid $dragonsBreath60;
+    color: $dragonsBreath60;
+    margin-bottom: 50px;
+  }
+  .audience-group {
+    display: table-row;
+    >div {
+      display: table-cell;
+      vertical-align: top;
+    }
+    .audience-desc {
+      div {
+        color: $brightGreen;
+        font-family: 'Unica One', Tahoma;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+    }
+    .audience-img {
+      padding-right: 20px;
+      width: 20%;
+    }
+  }
+}
+
+#end-products {
+  text-align: right;
+  .title {
+    border-bottom: 1px solid $brightGreen;
+    color: $brightGreen;
+    margin-bottom: 40px;
+  }
+  li {
+    list-style-type: none;
+    font-size: 16px;
+  }
+}
+
+#client-needs {
+  background-color: $dragonsBreath;
+  color: $white;
+}
+
+#call-us {
+  color: $dragonsBreath;
+  text-align: center;
+  #heading {
+    font-family: 'BodoniXT', Georgia;
+    line-height: 72px;
+    font-size: 60px;
+    letter-spacing: 1px;
+  }
+  #subheading {
+    font-family: 'Unica One', Tahoma;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  ul {
+    margin: 20px 0px 100px 0px;
+    li {
+      list-style-type: none;
+      font-size: 16px;
+    }
+  }
+}
+
+/* HOME */
+#intro {
+  background: url('/images/crumpled_background.png') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  #crumpled-img {
+    width: 100%;
+  }
+}
+
+#triple-threat {
+  background-color: $dragonsBreath;
+  display: table;
+  padding: 50px 5% 90px 5%;
+  >div {
+    display: table-row;
+  }
+  .point {
+    color: $white;
+    display: table-cell;
+    width: 20%;
+    padding: 0% 5%;
+    text-align: center;
+    .point-heading {
+      font-family: 'Unica One', Tahoma;
+      font-size: 30px;
+      line-height: 36px;
+      margin: 15px 0px 20px 0px;
+      text-transform: uppercase;
+    }
+    .point-text {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+#featured-solutions {
+  background-color: $brightGreen;
+}
+
+#charitableplanning {
+  margin-bottom: 120px;
+  text-align: center;
+  #desc {
+    font-family: 'BodoniXT', Georgia;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 50px 25% 0px 25%;
+  }
+  .off-header {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  #products {
+    display: table;
+    font-size: 13px;
+    overflow: hidden;
+    margin-top: 50px;
+    padding: 0px 5%;
+    >div {
+      display: table-row;
+    }
+    .product {
+      border-right: 1px solid $lightGray;
+      display: table-cell;
+      width: 15%;
+      padding: 0px 5% 0px 5%;
+      &:last-of-type {
+        border: none;
+      }
+      .product-heading {
+        color: $burntUmber;
+        font-family: 'BodoniXT', Georgia;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin: 20px 0px 10px 0px;
+      }
+    }
+  }
+}
+
+/* ABOUT */
+#about {
+  background-color: $dragonsBreath;
+  color: $white;
+}
+
+#employees {
+  display: table;
+  .employee-row {
+    display: table-row;
+    >div {
+      display: table-cell;
+    }
+  }
+  .pull-right {
+    text-align: right;
+  }
+  .person {
+    background-color: $londonFog;
+    .person-info {
+      padding: 40px 12% 30px 12%;
+      .name {
+        font-family: 'BodoniXT', Georgia;
+        font-size: 40px;
+        line-height: 45px;
+      }
+      .role {
+        font-family: 'Unica One', Tahoma;
+        font-size: 26px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .bio {
+    padding: 40px 12% 70px 12%;
+    p {
+      margin-bottom: 15px;
+    }
+    .personal-contact {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+    .pull-right {
+      margin-left: 50px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/* MESSAGE SENT */
+#email-sent {
+  background-color: $brightGreen;
+  font-family: 'BodoniXT', Georgia;
+  margin-bottom: 40px;
+  padding: 30px 18% 30px 18%;
+}
+
+#email-display {
+  background-color: $waynesboroTaupe;
+  margin: 20px 25% 80px 25%;
+  padding: 15px 50px 50px 50px;
+  >div {
+    background-color: $white;
+    padding: 30px 40px 30px 40px;
+    #timestamp {
+      color: $waynesboroTaupe;
+      margin-top: 15px;
+    }
+  }
+}

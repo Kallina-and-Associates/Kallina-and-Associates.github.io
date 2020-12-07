@@ -1,0 +1,79 @@
+/* HEADER */
+
+@import 'break_points';
+@import 'colors';
+@import 'fonts';
+
+#header {
+  display: table;
+  padding: 15px 10% 8px 10%;
+  width: 100%;
+  a {
+    color: $dragonsBreath;
+    font-size: 1.4em;
+  }
+  #header-row {
+    display: table-row;
+  }
+  img {
+    vertical-align: baseline;
+  }
+  #logo img {
+    padding-right: 10px;
+  }
+  #logo, #menu {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  #menu {
+    font-family: 'Unica One', Tahoma;
+    padding-bottom: 8px;
+    text-align: right;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      @media (min-width: $screen-sm-min) {
+        /* TODO - bottom! */
+        >li >img {
+          display: none;
+        }
+        ul li {
+          display: inline;
+          margin: 0px 0px 0px 20px;
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        >li >img {
+          cursor: pointer;
+        }
+        a {
+          color: $white;
+        }
+        li { 
+          position: relative;
+          ul {
+            background-color: $dragonsBreath;
+            position: absolute;
+            right: 0;
+            visibility: hidden;
+            li {
+              /* otherwise shows up as transparent against same color
+                 background and will show that text too. */
+              background: inherit;
+              border: 1px solid $lightGray;
+              border-top: none;
+              padding: 7px 20px 5px 40px;
+              z-index: 2;
+            }
+          }
+          &:hover ul {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}

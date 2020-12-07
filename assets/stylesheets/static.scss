@@ -1,0 +1,21 @@
+.static-text {
+  padding: 54px 18% 70px;
+  text-align: center;
+
+  h1 {
+    color: #95c11f;
+    font-weight: bold;
+    font-family: 'Unica One', Tahoma;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+  }
+
+  .highlight {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+.off-header.static {
+  background-color: #95c11f;
+}

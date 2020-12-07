@@ -1,0 +1,157 @@
+/* SOLUTIONS */
+
+@import 'break_points';
+@import 'colors';
+@import 'fonts';
+
+.teaser {
+  font-family: 'BodoniXT', Georgia;
+}
+
+.desc {
+  h3 {
+    color: $brightGreen;
+    font-weight: bold;
+    font-family: 'Unica One', Tahoma;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+}
+
+.story-bar {
+  background-image: url('/images/white_spacer.png');
+  background-size: 100% 90%; /* shows the green strip behind the image, making it look somewhat 3d */
+  background-repeat: repeat-x;
+  padding: 0px;
+  margin: 0px;
+
+  &.first {
+    text-align: right;
+    @media (min-width: $screen-sm-min) {
+      .image {
+        float: left;
+      }
+    }
+    @media (min-width: $screen-md-min) {
+      .desc, .teaser {
+        padding-right: 12%;
+      }
+      .desc {
+        float: right;
+        padding-right: 12%;
+      }  
+      .image .featured-img {
+        right: 0;
+      }
+      .teaser {
+        padding-left: 36%;
+      }
+    }
+  }
+  &.second {
+    text-align: left;
+    @media (min-width: $screen-sm-min) {
+      .image {
+        float: right;
+      }
+    }
+    @media (min-width: $screen-md-min) {
+      .desc, .teaser {
+        padding-left: 12%;
+      }
+      .desc {
+        float: left;
+      }
+      .image .featured-img {
+        left: 0;
+      }
+      .teaser {
+        padding-right: 36%;
+      }
+    }
+  }
+  .story {
+    padding: 0px 0 0;
+    overflow: hidden;
+    .desc {
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      @media (min-width: $screen-md-min) {
+        width: 46%;
+      }
+      .story-link {
+        margin-top: 20px;
+      }
+    }
+    .image {
+      text-align: right;
+      @media (min-width: $screen-md-min) {
+        width: 54%;
+      }
+    }
+  }
+  .teaser {
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 60px;
+  }
+  @media (max-width: $screen-sm-max) {
+    .teaser, .desc {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+
+#story-page {
+  margin-bottom: 100px;
+  #body {
+    margin: 0px 18% 0px 18%;
+    #explanation {
+      letter-spacing: 0.5px;
+      margin: 30px 0px 10px 0px;
+    }
+    .desc {
+      margin-bottom: 50px;
+    }
+    .image {
+      /* for laying out the images on top of one another */
+      float: right;
+      margin-bottom: 15px;
+      padding-left: 60px;
+      overflow: hidden;
+      .featured-img {
+        z-index: -1;
+      }
+      img {
+        display: block;
+      }
+      @media (max-width: $screen-xs-max) { /* TODO */
+        float: none;
+        padding-left: 0px;
+      }
+    }
+    #more-solutions {
+      float: right;
+      a {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+    }
+    .problem, .solution {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .teaser {
+    background-color: $brightGreen;
+    margin-bottom: 40px;
+    padding: 30px 18% 30px 18%;
+    h2 {
+      line-height: 36px;
+    }
+  }
+}
+
