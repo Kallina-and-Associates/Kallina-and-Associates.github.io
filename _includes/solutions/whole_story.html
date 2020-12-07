@@ -1,0 +1,32 @@
+<div id="story-page">
+  <div class="teaser">
+    <h2>{% include solutions/{{ include.story_name }}/teaser.html %}</h2>
+  </div>
+
+  <div id="body">
+    <div class="desc">
+      <h3>The Problem</h3>
+      <div class="problem">
+        {% include solutions/{{ include.story_name }}/problem.html %}
+      </div>
+      <h3>The Solution</h3>
+      <div class="solution">
+        {% include solutions/{{ include.story_name }}/solution.html %}
+      </div>
+    </div>
+
+    <div class="image" id="{{ include.story_name }}">
+      <img src="/assets/img/spacer_md.png" />
+      <img src="/assets/img/image_bottom_line.png" />
+      <div class="featured-img">
+        <img src="/assets/img/{{ include.story_image }}_md.png" />
+      </div>
+    </div>
+
+    <div id="explanation">
+      {% include solutions/{{ include.story_name }}/explanation.html %}
+    </div>
+
+    <div id="more-solutions"><a href="/solutions">More solutions >></a></div>
+  </div>
+</div>
