@@ -1,4 +1,5 @@
-/* HEADER */
+---
+---
 
 @import 'break_points';
 @import 'colors';
@@ -52,7 +53,7 @@
         a {
           color: $white;
         }
-        li { 
+        li {
           position: relative;
           ul {
             background-color: $dragonsBreath;

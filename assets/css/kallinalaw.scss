@@ -1,4 +1,5 @@
-/* MAIN */
+---
+---
 
 @import 'break_points';
 @import 'colors';
@@ -98,7 +99,7 @@ a, a:hover {
     .emphasis {
       font-size: 16px;
       font-weight: bold;
-    } 
+    }
   }
 }
 
@@ -197,7 +198,7 @@ a, a:hover {
 
 /* HOME */
 #intro {
-  background: url('/images/crumpled_background.png') no-repeat center center; 
+  background: url('/images/crumpled_background.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
